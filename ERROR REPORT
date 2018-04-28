@@ -1,0 +1,28 @@
+2018-04-28 17:55:13 <debug> main.js:1 () http proxy server closed.
+2018-04-28 17:55:13 <log> main.js:1 () Kill python client
+2018-04-28 17:55:13 <debug> main.js:1 () pac server closed.
+2018-04-28 17:55:35 <info> main.js:1 () file ensured
+2018-04-28 17:55:37 <debug> main.js:1 (o) run command: python C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\local.py -s 159.65.98.36 -p 12315 -k www.lutizi.com -m aes-256-ctr -O auth_chain_a -o http_simple -b 0.0.0.0 -l 1080
+2018-04-28 17:55:37 <debug> main.js:1 (Server.<anonymous>) pac server listen at: 0.0.0.0:2333
+2018-04-28 17:55:37 <debug> main.js:1 (Server.<anonymous>) http proxy server listen at: 0.0.0.0:12333
+IPv6 support
+Traceback (most recent call last):
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\local.py", line 81, in <module>
+    main()
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\local.py", line 43, in main
+    config = shell.get_config(True)
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\..\shadowsocks\shell.py", line 299, in get_config
+    check_config(config, is_local)
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\..\shadowsocks\shell.py", line 129, in check_config
+    encrypt.try_cipher(config['password'], config['method'])
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\..\shadowsocks\encrypt.py", line 46, in try_cipher
+    Encryptor(key, method)
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\..\shadowsocks\encrypt.py", line 90, in __init__
+    random_string(self._method_info[1]))
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\..\shadowsocks\encrypt.py", line 119, in get_cipher
+    return m[2](method, key, iv, op)
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\..\shadowsocks\crypto\openssl.py", line 89, in __init__
+    load_openssl()
+  File "C:\Users\skysu\AppData\Roaming\electron-ssr\shadowsocksr\shadowsocks\..\shadowsocks\crypto\openssl.py", line 41, in load_openssl
+    raise Exception('libcrypto(OpenSSL) not found')
+Exception: libcrypto(OpenSSL) not found
